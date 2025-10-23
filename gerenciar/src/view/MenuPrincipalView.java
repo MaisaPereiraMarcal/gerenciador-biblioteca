@@ -1,4 +1,4 @@
-package gerenciadorbiblioteca.view;
+package gerenciador.biblioteca.view.menuprincipalview
 
 import javax.swing.*;
 import java.awt.*;
@@ -29,5 +29,6 @@ public class MenuPrincipalView extends JFrame {
         add(btnSair);
 
         setLocationRelativeTo(null);
+        setVisible(true);
     }
 }
