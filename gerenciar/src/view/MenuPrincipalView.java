@@ -29,6 +29,5 @@ public class MenuPrincipalView extends JFrame {
         add(btnSair);
 
         setLocationRelativeTo(null);
-        setVisible(true);
     }
 }
