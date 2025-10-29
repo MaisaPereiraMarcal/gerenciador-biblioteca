@@ -1,17 +1,13 @@
-
-package gerenciadorbiblioteca;
-
-
 import javax.swing.SwingUtilities;
-
-import gerenciador.biblioteca.view.MenuPrincipalView;
+import com.meuprojeto.controller.BibliotecaController;
+import com.meuprojeto.view.MenuPrincipalView;
 
 public class AppBiblioteca {
 
-
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new MenuPrincipalView().setVisible(true));
+        SwingUtilities.invokeLater(() -> {
+            BibliotecaController controller = new BibliotecaController();
+            new MenuPrincipalView(controller);
+        });
     }
-
-
 }
